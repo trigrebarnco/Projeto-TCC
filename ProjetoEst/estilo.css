@@ -1,0 +1,69 @@
+*{ /*deixar as dimensões padrões */
+    padding: 0px;
+    margin: 0px;
+}
+
+.header-1{ /* estilo do primeiro cabeçario */
+    background-color: black;
+    height: 60px;
+}
+
+.logo{ /* direcionar a logo ao lado das três barras  */
+    padding-left: 60px;
+}
+
+ul{ /* formatando a lista */
+    top: 60px;
+    position: absolute;
+    width: 100%;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{ /* caracteres ao meio da página  */
+    top: 60px;
+    font-family: Arial;
+    background-color: rgba(146,204,221) ;
+}
+
+input[type="checkbox"]  /* efeito do menu */
+{
+    display: none;
+}
+
+input[type="checkbox"]:checked ~ nav  /* efeito do menu */
+{
+    transform: translateX(350px);
+}
+
+nav{ /* efeito do menu */
+    background-color:rgba(160, 172, 170, 0.432);
+    width: 350px;
+    left: -350px;
+    height: 400px;
+    position: absolute;
+    transition: all 0.5s;  
+}
+
+a{ /* efeito do menu */
+    display: block;
+    padding: 20px 5px;
+    color:white;
+}
+
+a:hover{ /* efeito do menu */
+    background-color: #0099ff;
+    color: black;
+}
+
+label{ /* efeito do menu */
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.meio{ /* posicionamento do meio da tela */
+    padding: 100px;
+}
